@@ -23,6 +23,8 @@ Or install it yourself as:
 ## Documentation
 [http://www.rubydoc.info/gems/slack-api](http://www.rubydoc.info/gems/slack-api)
 
+Note: Using the undocumented invite user api requires a client scope. Please see the following tutorial for adding client scopes.
+[How to get client scope](https://medium.com/@andrewarrow/how-to-get-slack-api-tokens-with-client-scope-e311856ebe9)
 ## Usage
 
 ```ruby
