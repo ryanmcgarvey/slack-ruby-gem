@@ -143,6 +143,17 @@ module Slack
         post("users.setPresence", options)
       end
 
+
+      #
+      # This method lets you invite new users to your team
+      # Consult the undocumented admin api.
+      #
+      # @option options [Object] :email
+      # @see https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
+      def users_invite(options={})
+        throw ArgumentError.new("Required arguments :email missing") if options[:email].nil?
+        post("users.admin.invite", options)
+      end
     end
   end
 end
